@@ -55,7 +55,6 @@ public class WeaTherActivity extends ActionBarActivity {
                     TextView pressureText = (TextView)findViewById(R.id.PressureText);
                     pressureText.setText(pressure);
 
-                    sysObj = jsonObject.getJSONObject("main");
                     String humidity = sysObj.getString("humidity");
                     TextView humidityText = (TextView)findViewById(R.id.HumidityText);
                     humidityText.setText(humidity);
